@@ -28,6 +28,7 @@ server.get('/api/adopters/:id', (req, res) => {
   let id = Number(req.params.id);
   if(Number.isNaN(id)) {
     res.status(400).json({message: 'invalid id'});
+    return;
   }
   Adopter.findById(req.params.id)
     .then(adopter => {
