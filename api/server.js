@@ -11,6 +11,7 @@ server.use(express.json());
 const Dog = require('./dogs/dogs-model');
 
 server.use('/api/adopters', adoptersRouter);
+server.use('/api/adoptersss', adoptersRouter);
 
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
