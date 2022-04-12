@@ -11,8 +11,7 @@ module.exports = {
   findDogs,
 };
 
-async function find(query) {
-  throw new Error("AHHHHHHH!");
+function find(query) {
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);
 
