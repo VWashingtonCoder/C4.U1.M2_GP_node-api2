@@ -1,5 +1,5 @@
 const express = require('express');
-const Adopter = require('./adopters/adopters-model');
+const Adopter = require('./adopters-model');
 
 const router = express.Router();
 
