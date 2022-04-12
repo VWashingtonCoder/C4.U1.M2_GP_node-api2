@@ -12,6 +12,7 @@ module.exports = {
 };
 
 function find(query) {
+  throw new Error("AHHHHHHH!");
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);
 
